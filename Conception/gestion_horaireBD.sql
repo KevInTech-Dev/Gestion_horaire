@@ -28,10 +28,10 @@ CREATE TABLE IF NOT EXISTS `utilisateurs`
     `id_utilisateur` INT AUTO_INCREMENT PRIMARY KEY,
     `nom_utilisateur` VARCHAR(30) NOT NULL,
     `prenoms_utilisateur` VARCHAR(50),
-    `email_utilisateur` VARCHAR(50),
+    `email_utilisateur` VARCHAR(50) NOT NULL,
     `telephone_utilisateur` VARCHAR(16),
     `mot_de_passe_utilisateur` VARCHAR(250) NOT NULL,
-    `code_type_utilisateur` VARCHAR(10) NOT NULL,
+    `code_type_utilisateur` VARCHAR(10) DEFAULT 'del',
     FOREIGN KEY (`code_type_utilisateur`) REFERENCES `type_utilisateurs`(`code_type_utilisateur`) ON DELETE CASCADE
 );
 
@@ -77,6 +77,6 @@ CREATE TABLE IF NOT EXISTS `enseignements`(
 */
 INSERT INTO `type_utilisateurs` (`code_type_utilisateur`, `libelle_type_utilisateur`)
 VALUES 
-('Admin', 'Administrateur'),
-('Ens','Enseignant chargé du cours'),
-('Del', 'Délégué de classe');
+('admin', 'Administrateur'),
+('ens','Enseignant chargé du cours'),
+('del', 'Délégué de classe');
