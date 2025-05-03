@@ -12,6 +12,18 @@ USE `gestion_horaire`;
 /*
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------
+---Création des utilisateurs-----------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+*/
+CREATE USER 'SupUsrGestHoraire'@'localhost' IDENTIFIED BY '';
+
+GRANT ALL PRIVILEGES
+ON `gestion_horaire`.* 
+TO 'SupUsrGestHoraire'@'localhost';
+
+/*
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------
 ---Création des tables-----------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 */
@@ -28,9 +40,9 @@ CREATE TABLE IF NOT EXISTS `utilisateurs`
     `id_utilisateur` INT AUTO_INCREMENT PRIMARY KEY,
     `nom_utilisateur` VARCHAR(30) NOT NULL,
     `prenoms_utilisateur` VARCHAR(50),
-    `email_utilisateur` VARCHAR(50) NOT NULL,
+    `email_utilisateur` VARCHAR(50) UNIQUE,
     `telephone_utilisateur` VARCHAR(16),
-    `mot_de_passe_utilisateur` VARCHAR(250) NOT NULL,
+    `mot_de_passe_utilisateur` VARCHAR(255) NOT NULL,
     `code_type_utilisateur` VARCHAR(10) DEFAULT 'del',
     FOREIGN KEY (`code_type_utilisateur`) REFERENCES `type_utilisateurs`(`code_type_utilisateur`) ON DELETE CASCADE
 );

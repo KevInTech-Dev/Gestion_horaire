@@ -15,7 +15,7 @@
       <div class="box">
         <div class="inner-box">
           <div class="forms-wrap">
-            <form action="index.html" autocomplete="off" class="sign-in-form">
+            <form action="connexion.php" method="POST" autocomplete="off" class="sign-in-form">
               <div class="heading">
                 <h2>Bienvenue !</h2>
                 <h6>Pas de compte ?</h6>
@@ -24,16 +24,16 @@
 
               <div class="actual-form">
                 <div class="input-wrap">
-                  <input type="email" minlength="4" class="input-field" autocomplete="off" required>
+                  <input type="email" minlength="4" name="email" class="input-field" autocomplete="off" required>
                   <label>Email</label>
                 </div>
 
                 <div class="input-wrap">
-                  <input type="password" minlength="4" class="input-field" autocomplete="off" required>
+                  <input type="password" minlength="4" class="input-field" name="password" autocomplete="off" required>
                   <label>Mot de Passe</label>
                 </div>
 
-                <input type="submit" value="Se connecter" class="sign-btn" >
+                <input type="submit" value="Se connecter" class="sign-btn" name="valider">
 
                 <p class="text">
                   Mot de passe oublié ?
@@ -42,7 +42,7 @@
               </div>
             </form>
 
-            <form action="index.html" autocomplete="off" class="sign-up-form">
+            <form action="inscription.php" method="POST" autocomplete="off" class="sign-up-form">
               <div class="heading">
                 <h2>Inscription</h2>
                 <h6>Déjà un compte ?</h6>
@@ -51,36 +51,36 @@
 
               <div class="actual-form">
                 <div class="input-wrap">
-                  <input type="text" minlength="4" class="input-field" autocomplete="off" required>
+                  <input type="text" minlength="4" name="lastname" class="input-field" autocomplete="off" required>
                   <label>Nom</label>
                 </div>
 
                 <div class="input-wrap">
-                  <input type="text" minlength="4" class="input-field" autocomplete="off" required>
+                  <input type="text" minlength="4" name="firstname" class="input-field" autocomplete="off" required>
                   <label>Prénoms</label>
                 </div>
 
                 <div class="input-wrap">
-                  <input type="email" class="input-field" autocomplete="off" required>
+                  <input type="email" name="email" class="input-field" autocomplete="off" required>
                   <label>Email</label>
                 </div>
 
                 <div class="input-wrap">
-                  <input type="tel" class="input-field" autocomplete="off" required>
+                  <input type="tel" name="telephone" class="input-field" autocomplete="off">
                   <label>Téléphone</label>
                 </div>
 
                 <div class="input-wrap">
-                  <input type="password" minlength="4" class="input-field" autocomplete="off" required>
+                  <input type="password" name="password" minlength="4" class="input-field" autocomplete="off" required>
                   <label>Mot de passe</label>
                 </div>
 
                 <div class="input-wrap">
-                  <input type="password" minlength="4" class="input-field" autocomplete="off" required>
+                  <input type="password" name="confirmation" minlength="4" class="input-field" autocomplete="off" required>
                   <label>Confirmation</label>
                 </div>
 
-                <input type="submit" value="S'inscrire" class="sign-btn">
+                <input type="submit" name="valider" value="S'inscrire" class="sign-btn">
 
                 <p class="text">
                   En s'inscrivant, j'accepte
