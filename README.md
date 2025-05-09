@@ -9,6 +9,7 @@
 - 👥 **Ajouter un nouveau professeur :** Remplir un simple formulaire pour enregistrer les informations essentielles de chaque enseignant.
 - 🔄 **Modifier ou supprimer un professeur :** Accédez à des options pour modifier les informations d'un professeur ou le supprimer selon vos besoins.
 - 📊 **Suivre les heures de cours de chaque professeur :** Notre application vous permet de suivre le nombre total d'heures effectuées par chaque enseignant pour chaque cours, ainsi que le nombre d'heures restantes à faire.
+
 ---
 
 ## 🛠️ Technologies utilisées
@@ -49,3 +50,9 @@ Les contributions sont toujours les bienvenues ! Pour contribuer :
 
 Pour toute question ou suggestion, contactez-moi via :
 - GitHub : [KevInTech-Dev](https://github.com/KevInTech-Dev)
+
+---
+
+## 📜 Licence
+
+Ce projet est sous licence [MIT](LICENSE). Vous êtes libre de l'utiliser, de le modifier et de le distribuer selon les termes de cette licence.
