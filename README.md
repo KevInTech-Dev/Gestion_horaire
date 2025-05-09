@@ -1,4 +1,4 @@
-# 🕒 Gestion Horaire
+# 🕒 Gestion des Horaires
 
 **Gestion Horaire** est une application web conçue pour gérer efficacement les horaires des enseignants d'une université et de faire un rapport à l'administration à la fin du cours.
 
